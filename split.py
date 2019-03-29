@@ -9,7 +9,7 @@ FILE_TESTS = 'test.txt'
 
 # Set to true if you want to copy first line from main
 # file into each split (like CSV header)
-IS_CSV = True
+IS_CSV = False
 
 # Make sure it adds to 100, no error checking below
 PERCENT_TRAIN = 50
