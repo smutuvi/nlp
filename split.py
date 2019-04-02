@@ -2,19 +2,20 @@ import random
 import math
 
 # Configure paths to your dataset files here
-DATASET_FILE = 'sw.dataset.shuffled.txt'
-FILE_TRAIN = 'train.txt'
-FILE_VALID = 'valid.txt'
-FILE_TESTS = 'test.txt'
+# DATASET_FILE = 'sw.dataset.shuffled.txt'
+DATASET_FILE = 'corpus/sw.dataset.shuffled.txt'
+FILE_TRAIN = 'corpus/train.txt'
+FILE_VALID = 'corpus/valid.txt'
+FILE_TESTS = 'corpus/test.txt'
 
 # Set to true if you want to copy first line from main
 # file into each split (like CSV header)
 IS_CSV = False
 
 # Make sure it adds to 100, no error checking below
-PERCENT_TRAIN = 50
-PERCENT_VALID = 25
-PERCENT_TESTS = 25
+PERCENT_TRAIN = 70
+PERCENT_VALID = 15
+PERCENT_TESTS = 15
 
 data = [l for l in open(DATASET_FILE, 'r')]
 
